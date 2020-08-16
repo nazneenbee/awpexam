@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #id1,#id2,#id3
+        {
+            font-weight: bold;
+        }
+        #maindiv
+        {
+            background: rgb(115, 172, 209); 
+            height: 50vh;
+            display:flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+        }
+    </style>
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <div id="maindiv">
+    <div id="id1">
+        <div>UserName</div>
+         <input type="text" name="username" id="nm">
+    </div>
+    <div id="id2">
+        <div>Password</div>
+        <input type="password" name="password" id="pass">
+    </div>
+    <div id="id3">
+        <div>Email</div>
+        <input type="email" name="email" id="eml">
+    </div>
+    <br>
+    <div>
+        <button style="font-weight: bold; width: 80px;" onclick="readvalue()">submit</button>
+        <button style="font-weight: bold; width: 80px;" onclick="resetdata()">reset</button>
+    </div>
+    </div>
+
+    <div id="opblock">
+      <div id="uname"></div>
+      <div id="upass"></div>
+      <div id="uemail"></div>  
+    </div>
+</body>
+</html>
